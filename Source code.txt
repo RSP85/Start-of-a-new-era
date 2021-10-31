@@ -1,0 +1,925 @@
+Login
+
+"UserName": "APIUser000034287",
+ "Password": "hT0t8SXCHG4n8Miv0ug9g8K7kp12EjTNKY6y2xu2mhx0uPoM3M"
+
+    "Result": 0,
+    "ResponseStatus": {
+        "ErrorCode": null,
+        "Message": null,
+        "StackTrace": null,
+        "Errors": null
+    },
+    "ResponseHeader": {
+        "Succeeded": true,
+        "Errors": [],
+        "TraceId": "0HMCSDF4UMQNK:00000002#pEeAAA"
+    },
+    "SessionId": "8c57e56196a54dd1bf74f2e0827df980"
+    "Payment Terminal API Key: "fb465538-6983-4dac-98ee-68196b33dc39"
+
+
+Initiate
+
+{
+    "RequestHeader": {
+        "SessionId": "8c57e56196a54dd1bf74f2e0827df980",
+        "ApiKey": "fb465538-6983-4dac-98ee-68196b33dc39"
+    },
+    "PlanData": {
+        "Amount": {
+            "Value": 2000,
+            "CurrencyCode": "GBP"
+        },
+        "RefOrderNumber": "abc124",
+        "AutoCapture": true,
+        "ExtendedParams": {
+            "AnyParameterKey1": "AnyParameterVal1",
+            "AnyParameterKey2": "AnyParameterVal2"
+        }
+    },
+    "BillingAddress": {
+        "AddressLine": "1 Street",
+        "AddressLine2": "Apartment 1",
+        "City": "London",
+        "State": "NY",
+        "Country": "United Kingdom",
+        "Zip": "N3 W6U"
+    },
+    "ConsumerData": {
+        "FullName": "John Smith",
+        "Email": "JohnS@splitit.com",
+        "PhoneNumber": "0044 7956 123458",
+        "CultureName": "en-gb"
+    },
+    "PaymentWizardData": {
+        "RequestedNumberOfInstallments": "1,2,3,4,5,6"
+    },
+    "RedirectUrls": {
+        "Succeeded": "http://localhost/Succeeded",
+        "Failed": "http://localhost/Failed",
+        "Canceled": "http://localhost/Canceled"
+    },
+    "EventsEndpoints": {
+        "CreateSucceeded": "https://www.async-success.com/"
+    }
+}
+
+{
+    "CheckoutUrl": "https://checkout.sandbox.splitit.com/v3/5?token=b1d30e52-af50-4ec7-af0d-3f4985d64e17&culture=en-GB",
+    "ApprovalUrl": "",
+    "TermsAndConditionsUrl": "https://documents.sandbox.splitit.com/TermsAndConditions/?PublicToken=b1d30e52-af50-4ec7-af0d-3f4985d64e17",
+    "PrivacyPolicyUrl": "https://documents.sandbox.splitit.com/PrivacyPolicy/?PublicToken=b1d30e52-af50-4ec7-af0d-3f4985d64e17",
+    "InstallmentPlanInfoUrl": "https://landing.sandbox.splitit.com/en-US/InstallmentPlan/ShowAgreement/?PublicToken=b1d30e52-af50-4ec7-af0d-3f4985d64e17",
+    "PublicToken": "b1d30e52-af50-4ec7-af0d-3f4985d64e17",
+    "LearnMoreUrl": "https://documents.sandbox.splitit.com/LearnMore/?PublicToken=b1d30e52-af50-4ec7-af0d-3f4985d64e17",
+    "ResponseHeader": {
+        "Succeeded": true,
+        "Errors": [],
+        "TraceId": "0HMCSDF4UMQOH:00000006#zmg22RkO6NxOgM4CBmgAA"
+    },
+    "InstallmentPlan": {
+        "InstallmentPlanNumber": "65230267436248877575",
+        "InstallmentPlanStatus": {
+            "Code": "Initializing",
+            "Id": 11,
+            "Description": "Initializing"
+        },
+        "Amount": {
+            "Value": 2000,
+            "Currency": {
+                "Symbol": "£",
+                "Id": 3,
+                "Code": "GBP",
+                "Description": "British Pound"
+            }
+        },
+        "OutstandingAmount": {
+            "Value": 2000,
+            "Currency": {
+                "Symbol": "£",
+                "Id": 3,
+                "Code": "GBP",
+                "Description": "British Pound"
+            }
+        },
+        "NumberOfInstallments": 0,
+        "NumberOfProcessedInstallments": 0,
+        "OriginalAmount": {
+            "Value": 2000,
+            "Currency": {
+                "Symbol": "£",
+                "Id": 3,
+                "Code": "GBP",
+                "Description": "British Pound"
+            }
+        },
+        "RefundAmount": {
+            "Value": 0,
+            "Currency": {
+                "Symbol": "£",
+                "Id": 3,
+                "Code": "GBP",
+                "Description": "British Pound"
+            }
+        },
+        "Consumer": {
+            "Id": "87eba066-fab5-4f9d-bf1e-0afba4a5f2e1",
+            "UniqueId": "87eba066-fab5-4f9d-bf1e-0afba4a5f2e1",
+            "UserName": "5e3ab581_JohnS@splitit.com",
+            "FullName": "John Smith",
+            "Email": "JohnS@splitit.com",
+            "PhoneNumber": "2342342342",
+            "CultureName": "en-GB",
+            "RoleName": null,
+            "IsLocked": false,
+            "IsDataRestricted": false,
+            "IsDataPrivateRestricted": false
+        },
+        "ActiveCard": null,
+        "FraudCheck": null,
+        "Terminal": {
+            "Id": 34508,
+            "Code": null,
+            "Description": "Splitit"
+        },
+        "Merchant": {
+            "Name": "Splitit_182",
+            "Id": 34287,
+            "Code": "splitit182",
+            "Description": "Splitit_182"
+        },
+        "RefOrderNumber": "abc124",
+        "PurchaseMethod": {
+            "Code": "ECommerce",
+            "Id": 3,
+            "Description": "E-Commerce"
+        },
+        "Strategy": {
+            "Code": "SecuredPlan",
+            "Id": 1,
+            "Description": "Secured"
+        },
+        "DelayResolution": null,
+        "ExtendedParams": {
+            "AnyParameterKey1": "AnyParameterVal1",
+            "AnyParameterKey2": "AnyParameterVal2"
+        },
+        "IsFullCaptured": false,
+        "IsChargedBack": false,
+        "ArePaymentsOnHold": false,
+        "ScpFundingPercent": 0,
+        "FundingStatus": "NotDetermined",
+        "TestMode": "None",
+        "CreationDateTime": "2021-10-31T14:37:12.144841Z",
+        "LifeTimeUrlExpirationTime": "2021-11-07T14:37:12.144841Z",
+        "Installments": null,
+        "SecureAuthorizations": null,
+        "LogoUrl": null,
+        "IsInAutoRetry": false,
+        "PaymentMethod": null
+    }
+
+
+Create
+
+{
+    "RequestHeader": {
+        "SessionId": "8c57e56196a54dd1bf74f2e0827df980",
+        "ApiKey": "fb465538-6983-4dac-98ee-68196b33dc39"
+    },
+    "PlanData": {
+        "Amount": {
+            "Value": 2000,
+            "CurrencyCode": "GBP"
+        },
+        "NumberOfInstallments": 6,
+        "RefOrderNumber": "abc124",
+        "AutoCapture": false
+    },
+    "BillingAddress": {
+        "AddressLine": "1 Street",
+        "AddressLine2": "Apartment 1",
+        "City": "London",
+        "State": "NY",
+        "Country": "United Kingdom",
+        "Zip": "N3 W6U"
+    },
+    "ConsumerData": {
+        "FullName": "John Smith",
+        "Email": "JohnS@splitit.com",
+        "PhoneNumber": "0044 7956 123458",
+        "CultureName": "en-gb"
+    },
+    "CreditCardDetails": {
+        "CardHolderFullName": "John Smith1",
+        "CardNumber": "4111111111111111",
+        "CardExpYear": "2032",
+        "CardExpMonth": "8",
+        "CardCvv": "123"
+    },
+    "PlanApprovalEvidence": {
+        "AreTermsAndConditionsApproved": "true"
+    }
+}
+
+{
+    "ApprovalUrl": "",
+    "ThreeDRedirectUrl": null,
+    "ResponseHeader": {
+        "Succeeded": true,
+        "Errors": [],
+        "TraceId": "0HMCSDEHA8F77:00000001#kZ06iQqxPv9vteQAA"
+    },
+    "InstallmentPlan": {
+        "InstallmentPlanNumber": "52220106545435306264",
+        "InstallmentPlanStatus": {
+            "Code": "PendingMerchantShipmentNotice",
+            "Id": 2,
+            "Description": "Pending Shipment"
+        },
+        "Amount": {
+            "Value": 2000,
+            "Currency": {
+                "Symbol": "£",
+                "Id": 3,
+                "Code": "GBP",
+                "Description": "British Pound"
+            }
+        },
+        "OutstandingAmount": {
+            "Value": 2000,
+            "Currency": {
+                "Symbol": "£",
+                "Id": 3,
+                "Code": "GBP",
+                "Description": "British Pound"
+            }
+        },
+        "NumberOfInstallments": 6,
+        "NumberOfProcessedInstallments": 0,
+        "OriginalAmount": {
+            "Value": 2000,
+            "Currency": {
+                "Symbol": "£",
+                "Id": 3,
+                "Code": "GBP",
+                "Description": "British Pound"
+            }
+        },
+        "RefundAmount": {
+            "Value": 0,
+            "Currency": {
+                "Symbol": "£",
+                "Id": 3,
+                "Code": "GBP",
+                "Description": "British Pound"
+            }
+        },
+        "Consumer": {
+            "Id": "87eba066-fab5-4f9d-bf1e-0afba4a5f2e1",
+            "UniqueId": "87eba066-fab5-4f9d-bf1e-0afba4a5f2e1",
+            "UserName": "5e3ab581_JohnS@splitit.com",
+            "FullName": "John Smith",
+            "Email": "JohnS@splitit.com",
+            "PhoneNumber": "2342342342",
+            "CultureName": "en-GB",
+            "RoleName": null,
+            "IsLocked": false,
+            "IsDataRestricted": false,
+            "IsDataPrivateRestricted": false
+        },
+        "ActiveCard": {
+            "CardId": "xuOdG1JR6ty6eZCqCXX0Rhe/DPLTPtSiDgd5yG6uA1+QpEyWdioaYxGJXjQkzUUa4KeXKBL23ZgZkCAFIXU68Q==",
+            "CardNumber": "************1111",
+            "CardExpMonth": "8",
+            "CardExpYear": "2032",
+            "CardBrand": {
+                "Code": "Visa",
+                "Id": 2,
+                "Description": "VISA"
+            },
+            "CardType": {
+                "Code": "Credit",
+                "Id": 1,
+                "Description": "CREDIT"
+            },
+            "Bin": "411111",
+            "CardHolderFullName": "John Smith1",
+            "CardCvv": "[Filtered]",
+            "Address": {
+                "AddressLine": "1 Street",
+                "AddressLine2": "Apartment 1",
+                "City": "London",
+                "Country": "GB",
+                "State": null,
+                "Zip": "N3 W6U",
+                "FullAddressLine": "1 Street,Apartment 1,London,GB"
+            },
+            "Token": "a7381952-2aba-4829-b475-29442e2d7b1c"
+        },
+        "FraudCheck": {
+            "FraudCheckResult": {
+                "Code": "Approved",
+                "Id": 1,
+                "Description": "Approved"
+            },
+            "ProviderResultCode": "",
+            "ProviderResultDesc": "approve",
+            "ProviderReferenceId": "abc124"
+        },
+        "Terminal": {
+            "Id": 34508,
+            "Code": null,
+            "Description": "Splitit"
+        },
+        "Merchant": {
+            "Name": "Splitit_182",
+            "Id": 34287,
+            "Code": "splitit182",
+            "Description": "Splitit_182"
+        },
+        "RefOrderNumber": "abc124",
+        "PurchaseMethod": {
+            "Code": "ECommerce",
+            "Id": 3,
+            "Description": "E-Commerce"
+        },
+        "Strategy": {
+            "Code": "SecuredPlan",
+            "Id": 1,
+            "Description": "Secured"
+        },
+        "DelayResolution": null,
+        "ExtendedParams": {},
+        "IsFullCaptured": false,
+        "IsChargedBack": false,
+        "ArePaymentsOnHold": false,
+        "ScpFundingPercent": 0,
+        "FundingStatus": "NotDetermined",
+        "TestMode": "None",
+        "CreationDateTime": "2021-10-31T14:46:52.2426169Z",
+        "LifeTimeUrlExpirationTime": "2021-11-07T14:46:52.2426169Z",
+        "Installments": [{
+            "InstallmentNumber": 1,
+            "Amount": {
+                "Value": 333.33,
+                "Currency": {
+                    "Symbol": "£",
+                    "Id": 3,
+                    "Code": "GBP",
+                    "Description": "British Pound"
+                }
+            },
+            "OriginalAmount": {
+                "Value": 333.33,
+                "Currency": {
+                    "Symbol": "£",
+                    "Id": 3,
+                    "Code": "GBP",
+                    "Description": "British Pound"
+                }
+            },
+            "RefundAmount": {
+                "Value": 0,
+                "Currency": {
+                    "Symbol": "£",
+                    "Id": 3,
+                    "Code": "GBP",
+                    "Description": "British Pound"
+                }
+            },
+            "ProcessDateTime": "2021-10-31T14:46:52.641156Z",
+            "IsRefund": false,
+            "RequiredCredit": {
+                "Value": 2000,
+                "Currency": {
+                    "Symbol": "£",
+                    "Id": 3,
+                    "Code": "GBP",
+                    "Description": "British Pound"
+                }
+            },
+            "CreatedDateTime": "2021-10-31T14:46:52.6419225Z",
+            "Status": {
+                "Code": "WaitingForProcessDate",
+                "Id": 2,
+                "Description": "Waiting for process date"
+            },
+            "TransactionResults": [{
+                "GatewayTransactionId": "cf09623d-4424-421d-9cbc-961c8137445e",
+                "SplititTransactionId": 5442289,
+                "GatewayResultCode": "1",
+                "GatewayResultMessage": "Authorize Succeeded",
+                "OperationType": {
+                    "Code": "Authorize",
+                    "Id": 1,
+                    "Description": "Approved"
+                },
+                "GatewayResult": true,
+                "GatewayTransactionDate": "2021-10-31T14:46:53.1",
+                "IsChargeback": false,
+                "AVSResult": null,
+                "CVCResult": null
+            }],
+            "CardDetails": {
+                "CardId": "xuOdG1JR6ty6eZCqCXX0Rhe/DPLTPtSiDgd5yG6uA1+QpEyWdioaYxGJXjQkzUUa4KeXKBL23ZgZkCAFIXU68Q==",
+                "CardNumber": "************1111",
+                "CardExpMonth": "8",
+                "CardExpYear": "2032",
+                "CardBrand": {
+                    "Code": "Visa",
+                    "Id": 2,
+                    "Description": "VISA"
+                },
+                "CardType": {
+                    "Code": "Credit",
+                    "Id": 1,
+                    "Description": "CREDIT"
+                },
+                "Bin": "411111",
+                "CardHolderFullName": "John Smith1",
+                "CardCvv": "[Filtered]",
+                "Address": {
+                    "AddressLine": "1 Street",
+                    "AddressLine2": "Apartment 1",
+                    "City": "London",
+                    "Country": "GB",
+                    "State": null,
+                    "Zip": "N3 W6U",
+                    "FullAddressLine": "1 Street,Apartment 1,London,GB"
+                },
+                "Token": null
+            },
+            "Result": true,
+            "PaymentMethod": "CreditCard"
+        }, {
+            "InstallmentNumber": 2,
+            "Amount": {
+                "Value": 333.33,
+                "Currency": {
+                    "Symbol": "£",
+                    "Id": 3,
+                    "Code": "GBP",
+                    "Description": "British Pound"
+                }
+            },
+            "OriginalAmount": {
+                "Value": 333.33,
+                "Currency": {
+                    "Symbol": "£",
+                    "Id": 3,
+                    "Code": "GBP",
+                    "Description": "British Pound"
+                }
+            },
+            "RefundAmount": {
+                "Value": 0,
+                "Currency": {
+                    "Symbol": "£",
+                    "Id": 3,
+                    "Code": "GBP",
+                    "Description": "British Pound"
+                }
+            },
+            "ProcessDateTime": "2021-11-30T14:46:52.6419235Z",
+            "IsRefund": false,
+            "RequiredCredit": {
+                "Value": 1666.67,
+                "Currency": {
+                    "Symbol": "£",
+                    "Id": 3,
+                    "Code": "GBP",
+                    "Description": "British Pound"
+                }
+            },
+            "CreatedDateTime": "2021-10-31T14:46:52.6419245Z",
+            "Status": {
+                "Code": "WaitingForProcessDate",
+                "Id": 2,
+                "Description": "Waiting for process date"
+            },
+            "TransactionResults": [],
+            "CardDetails": null,
+            "Result": null,
+            "PaymentMethod": "0"
+        }, {
+            "InstallmentNumber": 3,
+            "Amount": {
+                "Value": 333.33,
+                "Currency": {
+                    "Symbol": "£",
+                    "Id": 3,
+                    "Code": "GBP",
+                    "Description": "British Pound"
+                }
+            },
+            "OriginalAmount": {
+                "Value": 333.33,
+                "Currency": {
+                    "Symbol": "£",
+                    "Id": 3,
+                    "Code": "GBP",
+                    "Description": "British Pound"
+                }
+            },
+            "RefundAmount": {
+                "Value": 0,
+                "Currency": {
+                    "Symbol": "£",
+                    "Id": 3,
+                    "Code": "GBP",
+                    "Description": "British Pound"
+                }
+            },
+            "ProcessDateTime": "2021-12-31T14:46:52.6419247Z",
+            "IsRefund": false,
+            "RequiredCredit": {
+                "Value": 1333.34,
+                "Currency": {
+                    "Symbol": "£",
+                    "Id": 3,
+                    "Code": "GBP",
+                    "Description": "British Pound"
+                }
+            },
+            "CreatedDateTime": "2021-10-31T14:46:52.641925Z",
+            "Status": {
+                "Code": "WaitingForProcessDate",
+                "Id": 2,
+                "Description": "Waiting for process date"
+            },
+            "TransactionResults": [],
+            "CardDetails": null,
+            "Result": null,
+            "PaymentMethod": "0"
+        }, {
+            "InstallmentNumber": 4,
+            "Amount": {
+                "Value": 333.33,
+                "Currency": {
+                    "Symbol": "£",
+                    "Id": 3,
+                    "Code": "GBP",
+                    "Description": "British Pound"
+                }
+            },
+            "OriginalAmount": {
+                "Value": 333.33,
+                "Currency": {
+                    "Symbol": "£",
+                    "Id": 3,
+                    "Code": "GBP",
+                    "Description": "British Pound"
+                }
+            },
+            "RefundAmount": {
+                "Value": 0,
+                "Currency": {
+                    "Symbol": "£",
+                    "Id": 3,
+                    "Code": "GBP",
+                    "Description": "British Pound"
+                }
+            },
+            "ProcessDateTime": "2022-01-31T14:46:52.6419252Z",
+            "IsRefund": false,
+            "RequiredCredit": {
+                "Value": 1000.01,
+                "Currency": {
+                    "Symbol": "£",
+                    "Id": 3,
+                    "Code": "GBP",
+                    "Description": "British Pound"
+                }
+            },
+            "CreatedDateTime": "2021-10-31T14:46:52.6419255Z",
+            "Status": {
+                "Code": "WaitingForProcessDate",
+                "Id": 2,
+                "Description": "Waiting for process date"
+            },
+            "TransactionResults": [],
+            "CardDetails": null,
+            "Result": null,
+            "PaymentMethod": "0"
+        }, {
+            "InstallmentNumber": 5,
+            "Amount": {
+                "Value": 333.33,
+                "Currency": {
+                    "Symbol": "£",
+                    "Id": 3,
+                    "Code": "GBP",
+                    "Description": "British Pound"
+                }
+            },
+            "OriginalAmount": {
+                "Value": 333.33,
+                "Currency": {
+                    "Symbol": "£",
+                    "Id": 3,
+                    "Code": "GBP",
+                    "Description": "British Pound"
+                }
+            },
+            "RefundAmount": {
+                "Value": 0,
+                "Currency": {
+                    "Symbol": "£",
+                    "Id": 3,
+                    "Code": "GBP",
+                    "Description": "British Pound"
+                }
+            },
+            "ProcessDateTime": "2022-02-28T14:46:52.6419256Z",
+            "IsRefund": false,
+            "RequiredCredit": {
+                "Value": 666.68,
+                "Currency": {
+                    "Symbol": "£",
+                    "Id": 3,
+                    "Code": "GBP",
+                    "Description": "British Pound"
+                }
+            },
+            "CreatedDateTime": "2021-10-31T14:46:52.6419259Z",
+            "Status": {
+                "Code": "WaitingForProcessDate",
+                "Id": 2,
+                "Description": "Waiting for process date"
+            },
+            "TransactionResults": [],
+            "CardDetails": null,
+            "Result": null,
+            "PaymentMethod": "0"
+        }, {
+            "InstallmentNumber": 6,
+            "Amount": {
+                "Value": 333.35,
+                "Currency": {
+                    "Symbol": "£",
+                    "Id": 3,
+                    "Code": "GBP",
+                    "Description": "British Pound"
+                }
+            },
+            "OriginalAmount": {
+                "Value": 333.35,
+                "Currency": {
+                    "Symbol": "£",
+                    "Id": 3,
+                    "Code": "GBP",
+                    "Description": "British Pound"
+                }
+            },
+            "RefundAmount": {
+                "Value": 0,
+                "Currency": {
+                    "Symbol": "£",
+                    "Id": 3,
+                    "Code": "GBP",
+                    "Description": "British Pound"
+                }
+            },
+            "ProcessDateTime": "2022-03-31T14:46:52.641926Z",
+            "IsRefund": false,
+            "RequiredCredit": {
+                "Value": 333.35,
+                "Currency": {
+                    "Symbol": "£",
+                    "Id": 3,
+                    "Code": "GBP",
+                    "Description": "British Pound"
+                }
+            },
+            "CreatedDateTime": "2021-10-31T14:46:52.6419264Z",
+            "Status": {
+                "Code": "WaitingForProcessDate",
+                "Id": 2,
+                "Description": "Waiting for process date"
+            },
+            "TransactionResults": [],
+            "CardDetails": null,
+            "Result": null,
+            "PaymentMethod": "0"
+        }],
+        "SecureAuthorizations": [{
+            "ProcessingDate": "2021-10-31T14:46:52.8986419Z",
+            "Amount": {
+                "Value": 1666.67,
+                "Currency": {
+                    "Symbol": "£",
+                    "Id": 3,
+                    "Code": "GBP",
+                    "Description": "British Pound"
+                }
+            },
+            "TransactionResults": [{
+                "GatewayTransactionId": "471ea617-da32-403a-9dd3-d2af7d3a4345",
+                "SplititTransactionId": 0,
+                "GatewayResultCode": "1",
+                "GatewayResultMessage": "Authorize Succeeded",
+                "OperationType": {
+                    "Code": "Authorize",
+                    "Id": 1,
+                    "Description": "Approved"
+                },
+                "GatewayResult": true,
+                "GatewayTransactionDate": "2021-10-31T14:46:52.83",
+                "IsChargeback": false,
+                "AVSResult": null,
+                "CVCResult": null
+            }],
+            "CardDetails": {
+                "CardId": "xuOdG1JR6ty6eZCqCXX0Rhe/DPLTPtSiDgd5yG6uA1+QpEyWdioaYxGJXjQkzUUa4KeXKBL23ZgZkCAFIXU68Q==",
+                "CardNumber": "************1111",
+                "CardExpMonth": "8",
+                "CardExpYear": "2032",
+                "CardBrand": {
+                    "Code": "Visa",
+                    "Id": 2,
+                    "Description": "VISA"
+                },
+                "CardType": {
+                    "Code": "Credit",
+                    "Id": 1,
+                    "Description": "CREDIT"
+                },
+                "Bin": "411111",
+                "CardHolderFullName": "John Smith1",
+                "CardCvv": "[Filtered]",
+                "Address": {
+                    "AddressLine": "1 Street",
+                    "AddressLine2": "Apartment 1",
+                    "City": "London",
+                    "Country": "GB",
+                    "State": null,
+                    "Zip": "N3 W6U",
+                    "FullAddressLine": "1 Street,Apartment 1,London,GB"
+                },
+                "Token": null
+            },
+            "Result": true
+        }],
+        "LogoUrl": null,
+        "IsInAutoRetry": false,
+        "PaymentMethod": "CreditCard"
+    }
+}
+
+
+Get
+
+"RequestHeader": {
+        "SessionId": "8c57e56196a54dd1bf74f2e0827df980",
+        "ApiKey": "fb465538-6983-4dac-98ee-68196b33dc39"
+    },
+    "QueryCriteria": {
+        "InstallmentPlanNumber": "52220106545435306264"
+
+
+ "PlansList": [{
+        "InstallmentPlanNumber": "52220106545435306264",
+        "InstallmentPlanStatus": {
+            "Code": "PendingMerchantShipmentNotice",
+            "Id": 2,
+            "Description": "Pending Shipment"
+        },
+        "Amount": {
+            "Value": 2000,
+            "Currency": {
+                "Symbol": "£",
+                "Id": 3,
+                "Code": "GBP",
+                "Description": "British Pound"
+            }
+        },
+        "OutstandingAmount": {
+            "Value": 2000,
+            "Currency": {
+                "Symbol": "£",
+                "Id": 3,
+                "Code": "GBP",
+                "Description": "British Pound"
+            }
+        },
+        "NumberOfInstallments": 6,
+        "NumberOfProcessedInstallments": 0,
+        "OriginalAmount": {
+            "Value": 2000,
+            "Currency": {
+                "Symbol": "£",
+                "Id": 3,
+                "Code": "GBP",
+                "Description": "British Pound"
+            }
+        },
+        "RefundAmount": {
+            "Value": 0,
+            "Currency": {
+                "Symbol": "£",
+                "Id": 3,
+                "Code": "GBP",
+                "Description": "British Pound"
+            }
+        },
+        "Consumer": {
+            "Id": "87eba066-fab5-4f9d-bf1e-0afba4a5f2e1",
+            "UniqueId": "87eba066-fab5-4f9d-bf1e-0afba4a5f2e1",
+            "UserName": "5e3ab581_JohnS@splitit.com",
+            "FullName": "John Smith",
+            "Email": "JohnS@splitit.com",
+            "PhoneNumber": "2342342342",
+            "CultureName": "en-GB",
+            "RoleName": null,
+            "IsLocked": false,
+            "IsDataRestricted": false,
+            "IsDataPrivateRestricted": false
+        },
+        "ActiveCard": {
+            "CardId": "xuOdG1JR6ty6eZCqCXX0Rhe/DPLTPtSiDgd5yG6uA1+QpEyWdioaYxGJXjQkzUUa4KeXKBL23ZgZkCAFIXU68Q==",
+            "CardNumber": "************1111",
+            "CardExpMonth": "8",
+            "CardExpYear": "2032",
+            "CardBrand": {
+                "Code": "Visa",
+                "Id": 2,
+                "Description": "VISA"
+            },
+            "CardType": {
+                "Code": "Credit",
+                "Id": 1,
+                "Description": "CREDIT"
+            },
+            "Bin": "411111",
+            "CardHolderFullName": "John Smith1",
+            "CardCvv": "[Filtered]",
+            "Address": {
+                "AddressLine": "1 Street",
+                "AddressLine2": "Apartment 1",
+                "City": "London",
+                "Country": "GB",
+                "State": null,
+                "Zip": "N3 W6U",
+                "FullAddressLine": "1 Street,Apartment 1,London,GB"
+            },
+            "Token": "a7381952-2aba-4829-b475-29442e2d7b1c"
+        },
+        "FraudCheck": {
+            "FraudCheckResult": {
+                "Code": "Approved",
+                "Id": 1,
+                "Description": "Approved"
+            },
+            "ProviderResultCode": "",
+            "ProviderResultDesc": "approve",
+            "ProviderReferenceId": "abc124"
+        },
+        "Terminal": {
+            "Id": 34508,
+            "Code": null,
+            "Description": "Splitit"
+        },
+        "Merchant": {
+            "Name": "Splitit_182",
+            "Id": 34287,
+            "Code": "splitit182",
+            "Description": "Splitit_182"
+        },
+        "RefOrderNumber": "abc124",
+        "PurchaseMethod": {
+            "Code": "ECommerce",
+            "Id": 3,
+            "Description": "E-Commerce"
+        },
+        "Strategy": {
+            "Code": "SecuredPlan",
+            "Id": 1,
+            "Description": "Secured"
+        },
+        "DelayResolution": null,
+        "ExtendedParams": {},
+        "IsFullCaptured": false,
+        "IsChargedBack": false,
+        "ArePaymentsOnHold": false,
+        "ScpFundingPercent": 0,
+        "FundingStatus": "NotDetermined",
+        "TestMode": "None",
+        "CreationDateTime": "2021-10-31T14:46:52.243",
+        "LifeTimeUrlExpirationTime": "2021-11-07T14:46:52.243",
+        "Installments": null,
+        "SecureAuthorizations": null,
+        "LogoUrl": null,
+        "IsInAutoRetry": false,
+        "PaymentMethod": "CreditCard"
+    }],
+    "ResponseHeader": {
+        "Succeeded": true,
+        "Errors": [],
+        "TraceId": "0HMCSDEKKGDKT:00000003#44z0yXpjJXFEdTjAAA"
+    },
+    "PagingResponseHeader": {
+        "TotalNumber": 1
+    }
+}
